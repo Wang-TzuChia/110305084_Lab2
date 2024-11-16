@@ -1,0 +1,121 @@
+/* General styles */
+body {
+    color: #333;
+    background-color: #f4f4f9;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styles */
+header {
+    background-color: #4a90e2;
+    color: white;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-family: 'Georgia', serif;
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header p {
+    margin: 5px 0 0;
+    font-size: 1.2em;
+}
+
+/* Navbar styles */
+.navbar {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+}
+
+.navbar li {
+    position: relative;
+}
+
+.navbar a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    background-color: #555;
+}
+
+/* Dropdown menu styles */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+     padding-left: 0; /* 確保選項貼齊左側 */
+    text-align: left; /* 保持靠左對齊 */
+    
+}
+
+.dropdown-menu li {
+    width: 180px;
+}
+
+.dropdown-menu a {
+    padding: 10px 15px;
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-menu a:hover {
+    background-color: #555;
+}
+
+/* Main content styles */
+main {
+    padding: 20px;
+}
+
+main a {
+    background-color: #4a90e2;
+    color: white;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 3px;
+}
+
+main a:hover {
+    background-color: #357abd;
+}
+
+/* Media Queries */
+@media all {
+    body {
+        background-color: #e3f2fd;
+    }
+}
+
+@media print {
+    body {
+        background-color: white;
+        color: black;
+    }
+
+    .navbar {
+        display: none;
+    }
+}
